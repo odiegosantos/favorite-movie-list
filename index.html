@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Lista de Filmes</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="text-center">Meus Filmes Favoritos</h1>
+        <p>
+          <label for="inTitle">Título:</label>
+          <input type="text" class="form-control" id="inTitle">
+        </p>
+        <p>
+          <label for="inGenre">Gênero:</label>
+          <input type="text" class="form-control" id="inGenre">
+        </p>
+        <p class="right">
+          <input type="button" class="btn btn-primary" value="Adicionar" id="btAddMovie">
+        </p>
+
+        <table class="table table-striped" id="tbMovies">
+          <tr>
+            <th>Título</th>
+            <th>Gênero</th>
+            <th>
+              <label><input type="checkbox" id="ckEverything"> Todos </label>
+            </th>
+          </tr>
+        </table>
+
+        <p class="right">
+          <input type="button" class="btn btn-danger" value="Excluir" id="btDelete">
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
