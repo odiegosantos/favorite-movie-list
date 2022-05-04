@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
   <title>Lista de Filmes</title>
 </head>
 
@@ -12,23 +12,23 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-12">
-        <h1 class="text-center">Meus Filmes Favoritos</h1>
+        <h1 class="title">Meus Filmes Favoritos</h1>
         <p>
-          <label for="inTitle">Título:</label>
+          <label for="inTitle" class="movieTitle">Título</label>
           <input type="text" class="form-control" id="inTitle">
         </p>
         <p>
-          <label for="inGenre">Gênero:</label>
+          <label for="inGenre" class="movieTitle">Gênero</label>
           <input type="text" class="form-control" id="inGenre">
         </p>
         <p class="right">
-          <input type="button" class="btn btn-primary" value="Adicionar" id="btAddMovie">
+          <input type="button" class="w-25 btn btn-primary" value="Adicionar" id="btAddMovie">
         </p>
 
         <table class="table table-striped" id="tbMovies">
           <tr>
-            <th>Título</th>
-            <th>Gênero</th>
+            <th class="movieTitle">Título</th>
+            <th class="movieTitle">Gênero</th>
             <th>
               <label><input type="checkbox" id="ckEverything"> Todos </label>
             </th>
@@ -36,12 +36,12 @@
         </table>
 
         <p class="right">
-          <input type="button" class="btn btn-danger" value="Excluir" id="btDelete">
+          <input type="button" class="w-25 btn btn-danger" value="Excluir" id="btDelete">
         </p>
       </div>
     </div>
   </div>
-  <script src="js/main.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
